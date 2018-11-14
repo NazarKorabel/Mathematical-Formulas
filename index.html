@@ -1,18 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-<link rel="stylesheet" href="style.css">
-<title>Title</title>
-</head>
-<body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Title</title>
+</head>
+
+<body>
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">Mathematical Formulas</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+
+                        </div>
+                </nav>
+
+        </header>
+
+
+        <main id="main">
+                <section class="container about">
+                        <div class="row">
+                                <div class="col">
+                                        <div class="card">
+                                                <img class="card-img-top" style="width:20rem;height: 15rem;" src="img/1234.png">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Perimeter of the triangle</h5>
+
+                                                        <p class="card-text">
+                                                                We will help you calculate the perimeter of the
+                                                                triangle</p>
+                                                        <button onclick="hide();" class="btn btn-primary">Go over</button>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col">
+                                        <div class="card">
+                                                <img class="card-img-top" style="width:20rem;height: 15rem;" src="img/12345.png">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Aerage artermetic</h5>
+                                                        <p class="card-text">We will help you to calculate the average
+                                                                arithmetic 5 numbers</p>
+                                                        <a href="#" class="btn btn-primary">Go over</a>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="col">
+                                        <div class="card">
+                                                <img class="card-img-top" style="width:20rem;height: 16.5rem;" src="img/123456.png">
+                                                <div class="card-body">
+                                                        <h5 class="card-title">Square square</h5>
+                                                        <p class="card-text">
+                                                                We will help you find square footage</p>
+                                                        <a href="#" class="btn btn-primary">Go over</a>
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                        </div>
+                </section>
+
+                <section class="container test">
+                        <div class="card">
+                           <div class="container">
+                                <div class="form-group">
+                                        <label for="formGroupExampleInput">Сторона а</label>
+                                        <input min="1" type="number" class="form-control" id="a" placeholder="Example input">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="formGroupExampleInput2">Сторона б</label>
+                                        <input min="1" type="number" class="form-control" id="b" placeholder="Another input">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="formGroupExampleInput">Сторона с</label>
+                                        <input min="1" type="number" class="form-control" id="c" placeholder="Example input">
+                                      </div>
+                                    </form>
+                                        <button type="button" class="btn btn-outline-success" onclick="perimetr();">Периметр трикутника</button>
+                                    <p>Периметер трикутника:<span id="resault"></span></p>
+                                  
+                           </div>
+                                                        <button class="btn btn-primary" onclick="back();"> go back</button>
+                        </div>
+                </section>
+
+
+        </main>
+
+        <footer class="footer d-flex justify-content-around">
+
+                <span class="badge badge-primary">Павло Долепа</span>
+                <span class="badge badge-secondary">Корабель Назар</span>
+                <span class="badge badge-success">Басараб Данило</span>
+                <span class="badge badge-danger">Довба Андрій</span>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="js/three.r92.min.js"></script>
+        <script src="js/vanta.net.min.js"></script>
+        <script>
+                VANTA.NET({
+                        el: "#main",
+                        color: 'white',
+                        points: 6.00,
+                        backgroundColor: '#55115b',
+                        backgroundAlpha: 1.00
+                })
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
-</html>/''
+
+</html>
